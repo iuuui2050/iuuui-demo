@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="school" class="com.base.domain.School">
+        <property name="id" value="1"/>
+        <property name="name" value="电子科技大学"/>
+        <property name="describe" value="好大学"/>
+    </bean>
+
+    <bean id="class" class="com.base.domain.Class">
+        <property name="id" value="1"/>
+        <property name="name" value="4年级3班"/>
+        <property name="describe" value="很优秀的班级"/>
+    </bean>
+
+    <bean id="student" class="com.base.domain.Student">
+        <property name="id" value="1"/>
+        <property name="age" value="18"/>
+        <property name="name" value="法外狂徒张三"/>
+        <property name="describe" value="精通法律"/>
+    </bean>
+
+    <bean id="initBeanInter" class="com.spring.InitBeanInter" />
+    <bean id="disposableBeanInter" class="com.spring.DisposableBeanInter" />
+    <bean id="applicationContextAwareImpl" class="com.spring.ApplicationContextAwareImpl" />
+
+</beans>
